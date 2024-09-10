@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------main text------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-------------------------text card-------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------------test font---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------anmeted css------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!------------------------link css----------------------->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="login callOfDuty position-absolute top-0 start-0 end-0 bottom-0  d-none" id="loginSect">
+      <div class="container-fluid overflow-hidden ">
+        <div class="row ">
+          <div class=" justify-content-end  d-flex hambozo ">
+            <div class=" d-flex inpUser justify-content-start  align-items-center gap-1">
+              <div class="inputLogin d-flex col-md-6  w-100   flex-column justify-content-center align-items-center gap-2">
+                <!-- <input type="text" name="userName" class="w-100  p-2 rounded-2 inp1 "  id="inpName" placeholder="Enter your name...">
+                <input type="email" name="userEmail" class="w-100  p-2 rounded-2 inp2"  id="inpEmail" placeholder="Enter your email...">
+                <input type="password" name="usePass" class="w-100  p-2 rounded-2 inp3" id="inpPass" placeholder="Enter your password..."> -->
+                <div class="inputbox w-100 m-1" id="userNameSp">
+                  <input type="text" name="userName" class="w-100 inp1 "  id="inpName" required="required">
+                  <span>Username</span>
+                  <i></i>
+              </div>
+                <div class="inputbox w-100 m-1">
+                  <input type="email" name="userEmail" class="w-100 inp2 "  id="inpEmail" required="required">
+                  <span>Useremail</span>
+                  <i></i>
+              </div>
+                <div class="inputbox w-100 m-1">
+                  <input type="password" name="usePass" class="w-100 inp3 "  id="inpPass" required="required">
+                  <span>Userpassword</span>
+                  <i></i>
+              </div>
+                <p class="text-danger fs-5  my-3 d-none" id="requMess">All Inputs Is Required</p>
+                <p class="text-danger fs-5  my-3 d-none" id="isExistMess">Email Is Exist !!</p>
+                <div>
+                  <!-- <button class="btn btn-secondary mt-3 my-3 d-none" id="login">Login</button>
+                  <button class="btn btn-secondary mt-3 my-3 " id="btnSignUp">Sign Up</button> -->
+                  <button class="btn btn-secondary mt-3 my-3 d-none" id="login"> login</button>
+                  <button class="btn btn-secondary mt-3 my-3 " id="btnSignUp"> signUp</button>
+              
+                </div>
+                  <h2 class="h3 text-white mt-2 d-none" id="signUp">Don’t have an account? <a href="#" class="account" >Sign Up</a></h2>
+                  <h2 class="h3 text-white mt-2 " id="signIn">You have an account? <a href="#" class="account" >Sign In</a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lyner"></div>
+    <section id="mainData" class="d-none">
+     
+      <!-----------------------------navbar---------------------->
+      <nav class="navbar navbar-expand-lg">
+        
+        <div class="container px-5 contHome">
+          
+          <a class="navbar-brand logoImage" href="#"
+            ><img src="img/logo-sm.png" alt="logo" class="w-25" /> game
+            reveiws</a
+          >
+          <button
+            class="navbar-toggler navBtn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-5"
+                  id="navLink"
+                  aria-current="page"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" id="navLink" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" id="navLink" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" id="navLink" href="#">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" id="navLink" href="#">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" id="navLink" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!----------------------show data----------------------->
+      <div class="container">
+        
+        <div id="row" class="row row-cols-1 row-cols-md-4 g-3 mt-4">
+          
+          <span class="loader"></span>
+        </div>
+      </div>
+    </section>
+    <!---------------------section detalis-------------------->
+    <section class="position-absolute top-0 start-0 end-0 bottom-0 text-white d-none mt-4 closeDetails" id="detalisInfo">
+      <div class="container position-relative" >
+        <div class="row " id="detailsGame">
+          <span class="loader"></span>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>

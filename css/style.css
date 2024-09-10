@@ -1,0 +1,415 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #272b30;
+  --main-font: "Nerko One", cursive;
+  --main-color-active: #0099cc;
+  --main-background-nav: #3a497b;
+  --text-card: "Comfortaa", sans-serif;
+  --card-color: #939598;
+  --font-test: "Playwrite NZ", cursive;
+}
+img {
+  object-fit: cover;
+}
+a {
+  color: white !important;
+  font-weight: lighter;
+  text-decoration: none;
+}
+/* .lyner{
+  position: fixed;
+  inset: 0;
+  background-color: #0099CC;
+  z-index: 200
+} */
+body {
+  margin: 0;
+  background-color: #272b30;
+  font-family: var(--main-font);
+}
+.logoImage {
+  width: 15%;
+}
+.contHome {
+  margin-top: 11%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  background-color: var(--main-background-nav) !important;
+}
+.navbar {
+  background-image: url(../img/wraper.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #272b30;
+  z-index: 2000;
+  position: sticky;
+  top: -25%;
+}
+.login {
+  z-index: 3000;
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color-active) !important;
+}
+.navbar-nav .nav-link {
+  transition: 0.4s;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color-active) !important;
+}
+.card {
+  background-color: #272b30;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card .card-text {
+  font-family: var(--text-card);
+  font-size: 13px;
+  color: var(--card-color);
+}
+.card::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.189);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+col {
+  perspective: 100px;
+}
+.card:hover {
+  /* transform: scale(1.1); */
+  translate: -0.3px -4px -100px;
+}
+.card:hover::before {
+  background-color: transparent;
+}
+small {
+  color: white !important;
+}
+.modfiyBtn {
+  border-radius: 10%;
+  border: none;
+  padding-inline: 5%;
+  padding-block: 2%;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader {
+  margin: auto;
+  margin-top: 10%;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+.close {
+  cursor: pointer;
+}
+.showData {
+  padding: 10px 30px;
+  background-color: rgb(230, 223, 17);
+  border-radius: 4%;
+  color: black !important;
+  margin-top: 5% !important;
+  display: block;
+  width: fit-content;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.showData:hover {
+  /* background-color: #0099cc90; */
+  transform: scaleX(1.1);
+  letter-spacing: 0.5px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background: #32383e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2226;
+  border-radius: 20%;
+  height: 30px;
+  padding: 5px 20px;
+}
+/* #particles-js{
+  width: 100%;
+  height: 100vh;
+
+} */
+.callOfDuty {
+  background-image: url(../img/background\ login.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.inp1 {
+  outline: none;
+}
+.inp2 {
+  outline: none;
+}
+.inp3 {
+  outline: none;
+}
+.inpUser {
+  transform: translateX(-100%);
+}
+.hambozo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loginImage {
+  margin-left: 25px !important;
+}
+.inputLogin {
+  width: 170% !important;
+}
+.account:hover {
+  text-decoration: underline;
+}
+@media (max-width: 577px) {
+  .hambozo {
+    display: flex;
+  }
+  .inpUser {
+    transform: translateX(-17%);
+  }
+  .inputLogin {
+    width: 190% !important;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 577px) {
+  .logoImage {
+    width: 50%;
+  }
+  .card:hover {
+    transform: scale(0.5s);
+  }
+  .navbar {
+    z-index: 2000;
+    position: sticky;
+    top: -7%;
+  }
+  .imgAndDetalis {
+    display: flex;
+    flex-direction: column;
+  }
+  .dnameAndbClose {
+    margin-block: 5%;
+    padding-inline: 5%;
+  }
+  .contentGame {
+    padding-block: 10%;
+    padding-inline: 3% !important;
+    /* padding-left: 0 !important; */
+  }
+  .callOfDuty {
+    background-image: url(../img/test.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #signUp {
+    color: black;
+  }
+  #signIn {
+    color: black;
+  }
+}
+.inputbox {
+  position: relative;
+  width: 196px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: white;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0, 75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #c4e66e;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+button,
+button::after {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  margin-top: 10px;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "HOVER ME";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
